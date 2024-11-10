@@ -1,0 +1,1 @@
+Based on the information you provided, Bootstrap's JavaScript may not fully work with React or Next.js because it directly manipulates the DOM, which can conflict with React's virtual DOM handling. A recommended alternative is to use React Bootstrap, a library built specifically for integrating Bootstrap with React.
