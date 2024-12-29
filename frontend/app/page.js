@@ -6,7 +6,6 @@ export default function Home() {
     <div>
       <Navbar />
       <main>
-        <h1>Welcome to the News App</h1>
         <ArticleList />
       </main>
     </div>

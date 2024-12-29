@@ -1,1 +1,8 @@
 Based on the information you provided, Bootstrap's JavaScript may not fully work with React or Next.js because it directly manipulates the DOM, which can conflict with React's virtual DOM handling. A recommended alternative is to use React Bootstrap, a library built specifically for integrating Bootstrap with React.
+
+theres compatibillity problem with storybook inside the next.js project because i think the react version 19 isnt stable yet , so i move the storybook ito its own service and imported the components from the next project
+
+-- stay up to date whenofficial 19 stable release will be ready
+
+also there was a problem with installing react-bootstrap with react 19 so i use this npm config set legacy-peer-deps true
+i dont think its the best approach .. but for now , fix later when react 19 stable release.

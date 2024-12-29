@@ -1,0 +1,16 @@
+// to understand this file look again the net ninja video num 19 on customizing bootstrap
+
+//this is the way to override the bootstrap variables,etc..
+
+$primary: rgba(188, 55, 148, 0.6);
+
+//dont worry it wont override our variables , because the variables
+// inside the bootstrap nodemodules are set using the default statement
+// example: $primary  $blue !default;
+// this !default is a sass feature that means only apply this value if
+// one already hasn't been declared, but because i did declared here before the import the primary variable it will use my primary variable.
+// and now whats left is to compile our sass into a final css file which will then use in out html page. i can use any sass compiler that i want,
+// he uses a package for vscode called live sass compiler , this package watch a sass file for changes and then automatically compile that sass file into a css file(whenever a change is made and saved)
+//  i use here the cdn option - and the sass compiler just compile this to a minfied css which then i use instead of the css cdn version one but what i need to do is use the npm bootstrap packagae and do the overridind sass with webpack
+
+//@import "../node_modules/bootstrap/scss/bootstrap.scss";
